@@ -11,14 +11,14 @@ const p1NameInput = document.querySelector("#p1-name-input");
 const p2NameInput = document.querySelector("#p2-name-input");
 
 // variables that will change during the game
-let playerTurn = 1;   // keep track of who's turn it is
-let gameRound = 1;    // keep track of what round we are on
-let die1Number = 0;   // the number on die1
-let die2Number = 0;   // the number on die2
-let diceSum = 0;      // the sum of both dice
-let p1TotalPts = 0;   // player 1's total points
-let p2TotalPts = 0;   // player 2's total points
-let roundPoints = 45; // the points available on a given turn
+let playerTurn = 1;      // keep track of who's turn it is
+let gameRound = 1;       // keep track of what round we are on
+let die1Number = 0;      // the number on die1
+let die2Number = 0;      // the number on die2
+let diceSum = 0;         // the sum of both dice
+let p1TotalPts = 0;      // player 1's total points
+let p2TotalPts = 0;      // player 2's total points
+let roundPoints = 45;    // the points available on a given turn
 let p1Name = "Player 1"; // name of Player 1
 let p2Name = "Player 2"; // name of Player 1
 
