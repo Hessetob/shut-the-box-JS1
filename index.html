@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shut the Box Dice Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./game.js" defer></script>
+</head>
+<body>
+    <h1>Shut the Box <i class="bi bi-box-seam"></i></h1>
+    <section class="players">
+        <input type="text" name="p1name-input" id="p1-name-input" placeholder="Player 1: Name" autofocus autocapitalize="off" required>
+        <input type="text" name="p2name-input" id="p2-name-input" placeholder="Player 2: Name" autocapitalize="off" required>
+        <button id="start-btn" type="submit">Start Game</button>
+    </section>
+    <section class="board">
+        <div class="game-board info">
+            <h3 id="round-h3">Round 1</h3>
+            <h3 id="vs-h3">Player1 vs Player2</h3>
+            <h3 id="current-player-h3">Player 1's Turn</h3>
+        </div>
+        <div class="game-board">
+            <div id="box1" data-lid="open">1</div>
+            <div id="box2" data-lid="open">2</div>
+            <div id="box3" data-lid="open">3</div>
+            <div id="box4" data-lid="open">4</div>
+            <div id="box5" data-lid="open">5</div>
+            <div id="box6" data-lid="open">6</div>
+            <div id="box7" data-lid="open">7</div>
+            <div id="box8" data-lid="open">8</div>
+            <div id="box9" data-lid="open">9</div>
+        </div>
+    </section>
+    <section class="dice">
+        <i id="die1" class="bi bi-dice-3"></i>
+        <i id="die2" class="bi bi-dice-3"></i>
+        <p id="sum-of-dice">Sum: 6</p>
+        <button id="roll-btn" >Roll</button>
+        <button disabled>Individual</button>
+        <button disabled>Sum</button>
+        <button disabled>End Turn</button>
+    </section>
+    <section class="scorecard">
+        <table>
+            <tr>
+                <th></th>
+                <th id="table-player-1">Player1</th>
+                <th id="table-player-2">Player2</th>
+            </tr>
+            <tr>
+                <th>Round 1</th>
+                <td id="r1p1"></td>
+                <td id="r1p2"></td>
+            </tr>
+            <tr>
+                <th>Round 2</th>
+                <td id="r2p1"></td>
+                <td id="r2p2"></td>
+            </tr>
+            <tr>
+                <th>Round 3</th>
+                <td id="r3p1"></td>
+                <td id="r3p2"></td>
+            </tr>
+            <tr>
+                <th>Round 4</th>
+                <td id="r4p1"></td>
+                <td id="r4p2"></td>
+            </tr>
+            <tr>
+                <th>Round 5</th>
+                <td id="r5p1"></td>
+                <td id="r5p2"></td>
+            </tr>
+            <tr>
+                <th><h4>Totals</h4></th>
+                <td id="total-p1"></td>
+                <td id="total-p2"></td>
+            </tr>
+        </table>
+    </section>
+    <section class="winner">
+        <h1 id="winner-message">Winner: <span>Player 1</span>!!!</h1>
+    </section>
+</body>
+</html>
